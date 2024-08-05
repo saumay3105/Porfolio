@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './navbar.js';
+import Intro from './intro.js';
 
 function App() {
   return (
-    <div className="App">
-      <h2>Saumay Jaiswal</h2>
-    </div>
+    <>
+    <Navbar/>
+    <Intro/> 
+    </>
   );
 }
 
