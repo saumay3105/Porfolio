@@ -63,16 +63,9 @@ export const About = () => {
             {skills.map((data, i) => {
               return (
                 <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
                   <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
+                    <h3 className="progress-title">Languages: {data.Languages}</h3>
+                    <h3 className="progress-title">Technical: {data.Technical}</h3>
                   </div>
                 </div>
               );

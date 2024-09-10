@@ -5,140 +5,85 @@ const meta = {
 };
 
 const introdata = {
-    title: "I’m Saumay Jaiswal",
-    animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
-    },
-    description: " A Pre-final year computer science student with a genuine enthusiasm for cutting-edge technologies, exploring interests in blockchain, AI, ML, and web development.",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+  title: "I’m Saumay Jaiswal",
+  animated: {
+    first: "I build full-stack web applications",
+    second: "I design machine learning solutions",
+    third: "I create scalable cloud solutions",
+  },
+  description:
+    " A Pre-final year computer science student with a genuine enthusiasm for cutting-edge technologies, exploring interests in Cloud, Blockchain, AI, ML, and web development.",
+  your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "a bit about my self",
+    aboutme: "Pre-final year computer science student with a genuine enthusiasm for cutting-edge technologies, exploring interests in Cloud, Blockchain, AI, ML, and web development. Eager to delve into the transformative potential of DeFi and fintech, bringing a proactive approach to learning and contributing to innovative projects. Excited to collaborate with like-minded professionals and shape the future of tech together. Let's connect and explore the limitless possibilities in this dynamic field!",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Intern",
+        where: "Project:Human City",
+        date: "June 2024-Sept 2024",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Full-Stack Developer- Intern",
+        where: "Meta-Craftlab",
+        date: "May-2024-July 2023",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Research Intern",
+        where: "SCAAI",
+        date: "June-2024-Present",
     },
 ];
 
 const skills = [{
-        name: "Python",
-        value: 90,
+    Languages:" C/C++, Python, Java, JavaScript, HTML/CSS",
+    Technical: "Git/GitHub, Cloud, MySQL, OOPS, MongoDB, ReactJS, ExpressJS, NodeJS"
+}];
+
+const services = [
+    {
+        title: "Full Stack Web Development",
+        description: "Building dynamic and responsive web applications using modern frameworks and technologies across the front-end and back-end.",
     },
     {
-        name: "Djano",
-        value: 85,
+        title: "Designing ML Solutions",
+        description: "Creating machine learning models and systems to solve complex data-driven challenges, leveraging AI for predictive analytics.",
     },
     {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
+        title: "Cloud Solutions",
+        description: "Developing scalable and secure cloud-based applications, optimizing performance, and managing cloud infrastructure.",
     },
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "images/ck.png",
+        description: "Clip Kadabra is a powerful and intuitive video editing web application designed to cater to all your video editing needs.",
+        link: "https://github.com/Miran-Firdausi/ClipKadabra",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "images/mx.png",
+        description: "An Application to manage Music Library created using Java Swing, JDBC, NetBeans and SQL",
+        link: "https://github.com/saumay3105/MusixFy",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "images/rm.png",
+        description: "A tool to convert text extracted from documents into a video and generate a quiz based on it",
+        link: "https://github.com/saumay3105/ReadMe",
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "images/mc.png",
+        description: "A Research based project to build a ML model to detect if mass detected in a mammogram is benign or malignant.",
+        link: "https://github.com/Miran-Firdausi/ClipKadabra",
     },
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "saumay123sj@gmail.com",
+    YOUR_FONE: "+91 9651648985",
+    description: "Feel free to reach out to me !!",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
