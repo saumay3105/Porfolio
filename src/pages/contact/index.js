@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import * as emailjs from "emailjs-com";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -7,6 +7,10 @@ import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
 
 export const ContactUs = () => {
+  const YOUR_SERVICE_ID = 'service_mgy7nfc';
+  const YOUR_TEMPLATE_ID = 'template_jiot1xj';
+  const YOUR_PUBLIC_KEY = 'b_KcIKeqVlpKfkq6L';
+
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
@@ -17,9 +21,12 @@ export const ContactUs = () => {
     variant: "",
   });
 
+  // Create a reference for the form
+  const form = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
+    setFormdata((prevData) => ({ ...prevData, loading: true }));
 
     const templateParams = {
       from_name: formData.email,
@@ -29,26 +36,26 @@ export const ContactUs = () => {
     };
 
     emailjs
-      .send(
-        contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
-        contactConfig.YOUR_USER_ID
-      )
+      .sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, YOUR_PUBLIC_KEY)
       .then(
         (result) => {
-          console.log(result.text);
+          console.log('SUCCESS!');
           setFormdata({
+            email: "",
+            name: "",
+            message: "",
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: "SUCCESS! Thank you for your message.",
             variant: "success",
             show: true,
           });
         },
         (error) => {
-          console.log(error.text);
+          console.log('FAILED...', error.text);
           setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
+            ...formData,
+            loading: false,
+            alertmessage: `Failed to send! ${error.text}`,
             variant: "danger",
             show: true,
           });
@@ -81,11 +88,8 @@ export const ContactUs = () => {
         <Row className="sec_sp">
           <Col lg="12">
             <Alert
-              //show={formData.show}
               variant={formData.variant}
-              className={`rounded-0 co_alert ${
-                formData.show ? "d-block" : "d-none"
-              }`}
+              className={`rounded-0 co_alert ${formData.show ? "d-block" : "d-none"}`}
               onClose={() => setFormdata({ show: false })}
               dismissible
             >
@@ -112,7 +116,7 @@ export const ContactUs = () => {
             <p>{contactConfig.description}</p>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <form onSubmit={handleSubmit} className="contact__form w-100">
+            <form ref={form} onSubmit={handleSubmit} className="contact__form w-100">
               <Row>
                 <Col lg="6" className="form-group">
                   <input
