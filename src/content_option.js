@@ -1,7 +1,7 @@
 const logotext = "Saumay";
 const meta = {
     title: "Saumay Jaiswal",
-    description: "I’m Saumay Jaiswal, a Pr-final Year Computer Science Student. ",
+    description: "I’m Saumay Jaiswal, a Pre-final Year Computer Science Student at SIT Pune. ",
 };
 
 const introdata = {
