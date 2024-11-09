@@ -76,8 +76,9 @@ const dataportfolio = [{
     {
         img: "images/mc.png",
         description: "A Research based project to build a ML model to detect if mass detected in a mammogram is benign or malignant.",
-        link: "https://github.com/Miran-Firdausi/ClipKadabra",
+        link: "https://github.com/saumay3105/Mammogram-Classification",
     },
+    
 ];
 
 const contactConfig = {
